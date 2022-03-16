@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Estimation Board</title>
+
+
+    <script type="text/javascript" src="https://rally1.rallydev.com/apps/2.1/sdk-debug.js"></script>
+
+    <script type="text/javascript">
+        Rally.loadScripts(
+                [
+                      "SizesField.js",
+                      "RowSettingsField.js",
+                      "Settings.js",
+                      "BoardApp.js",
+                ],
+        function() {
+            Rally.launchApp('EstimationBoardApp', {
+                name:"Estimation Board",
+                parentRepos:"",
+                version:"1.0.1"
+            });
+        }, true);
+    </script>
+
+
+    <link rel="stylesheet" type="text/css" href="BoardApp.less.css"/>
+</head>
+<body>
+</body>
+</html>
